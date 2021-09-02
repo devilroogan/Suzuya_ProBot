@@ -85,7 +85,7 @@ if ENV:
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None)
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None)
     REPOSITORY = os.environ.get("REPOSITORY", "")
-    REDIS_URL = os.environ.get("REDIS_URL")
+    REDIS_URI = os.environ.get("REDIS_URI")
     IBM_WATSON_CRED_URL = os.environ.get("IBM_WATSON_CRED_URL", None)
     IBM_WATSON_CRED_PASSWORD = os.environ.get("IBM_WATSON_CRED_PASSWORD", None)
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
@@ -180,7 +180,7 @@ else:
         sw = None
         LOGGER.warning("Can't connect to SpamWatch!")
       
-REDIS = StrictRedis.from_url(REDIS_URL,decode_responses=True)
+REDIS = StrictRedis.from_url(REDIS_URI,decode_responses=True)
 try:
     REDIS.ping()
     LOGGER.info("Your redis server is now alive!")
