@@ -181,7 +181,7 @@ else:
         sw = None
         LOGGER.warning("Can't connect to SpamWatch!")
       
-REDIS = StrictRedis.from_url(REDIS_URI,decode_responses=True)
+REDIS = StrictRedis.from_url(REDIS_URI,decode_responses=False)
 try:
     REDIS.ping()
     LOGGER.info("Your redis server is now alive!")
