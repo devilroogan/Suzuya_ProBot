@@ -58,7 +58,28 @@ class Config(object):
     WALL_API = 'awoo'  #For wallpapers, get one from https://wall.alphacoders.com/api.php
     AI_API_KEY = 'awoo'  #For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
     BL_CHATS = []  # List of groups that you want blacklisted.
-    SPAMMERS = None
+    SPAMMERS = None 
+    ALLOW_CHATS = True 
+    BOT_ID = " "
+    MONGO_DB_URI = None 
+
+    HEROKU_API_KEY = None 
+
+    HEROKU_APP_NAME = None 
+
+    VIRUS_API_KEY = None 
+
+    TEMP_DOWNLOAD_DIRECTORY = " "
+
+    OPENWEATHERMAP_ID = None 
+
+    
+
+
+
+    
+
+    
 
 
 class Production(Config):
