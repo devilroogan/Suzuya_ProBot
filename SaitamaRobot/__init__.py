@@ -159,7 +159,8 @@ else:
     SUPPORT_CHAT = Config.SUPPORT_CHAT
     SPAMWATCH_SUPPORT_CHAT = Config.SPAMWATCH_SUPPORT_CHAT
     SPAMWATCH_API = Config.SPAMWATCH_API
-    INFOPIC = Config.INFOPIC
+    INFOPIC = Config.INFOPIC 
+    REDIS_URI = Config.REDIS_URI
 
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
